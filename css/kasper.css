@@ -318,3 +318,40 @@ header .landing .change-background {
     background-color: var(--main-color);
 }
 /* end header */
+/* start services section */
+.services{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (min-width: 768px){
+  .services .services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px , 1fr));
+    gap: 50px;
+  }
+}
+
+@media (max-width: 767px){
+   .services .services-container .srv-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  } 
+}
+.services .services-container .srv-box{
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.services .services-container i{
+
+}
+.services .services-container h3{
+ color: var(--main-color);
+ margin-bottom: 20px;
+}
+.services .services-container p{
+  line-height: 1.5;
+  color: #777;
+}
+/* end services section */
